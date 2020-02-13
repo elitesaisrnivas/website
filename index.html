@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <!--header-->
+    <section class="container-fluid header-page">
+        <div class="navigation-bar">
+            <nav class="navbar navbar-expand-lg navbar  fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#"> <img src="./images/navimg1.png" alt="" style="border-radius: 50%; width: 30px;display: inline-flex;margin-top: -6PX;"> &nbsp;SAI SRINIVAS</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span id="navicon" class="navbar-toggler-icon">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                        
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarToggler">
+                        <ul class="navbar-nav m-auto mt-2 mt-lg-0 ">
+                            <li class="nav-item  ">
+                                <a class="nav-link" href="#header">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Resume">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact-info">Contact</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-icons">
+                           <a href="https://www.facebook.com/saisrinivas.kaligatla.0009"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                           <a href="linkedin.com/in/sai-srinivas-kaligatla-167713178 "><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                           <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!--header ends-->
+
+    <!--section on banner-->
+    <section class="container onbanner">
+        <div class="onbanner-div">
+            <div class="radial-image">
+                <img src="./images/IMG-20200115-WA0001.jpg" alt="">
+                <p class="text-center">Hey, I'm Developer</p>
+            </div>
+            <div class="profile-name">
+                <h1>Sai Srinivas Kaligatla</h1>
+            </div>
+            <div class="onbanner-para">
+                <p>Obviously I'M Web Developer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            </div>
+        </div>
+    </section>
+    <!--section on banner ends-->
+
+    <!--toast greeting-->
+    <div class="container-fluid">
+        <div class="toast" data-autohide="true">
+            <div class="toast-header">
+                <strong class="mr-auto text-primary text-center">Welcome Dear</strong>
+                <small class="text-muted"></small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast">&times;</button>
+            </div>
+            <div class="toast-body">
+                <div id="greetings"></div>
+            </div>
+        </div>
+    </div>
+    <!--toast greetings end-->
+
+    <!--color pannel-->
+    <section>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSideBar()">
+                <i class="fa fa-gear fa-spin" style="font-size:24px"></i>
+            </div>
+            <div class="slide-header">
+                <h5>pick your color</h5>
+            </div>
+
+            <div class="color">
+                <div class="btn">
+                    <button class="btn1"></button>
+                    <button class="btn2"></button>
+                    <button class="btn3"></button>
+                    <button class="btn4"></button>
+                    <button class="btn5"></button>
+                    <button class="btn6"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--color pannel ends-->
+
+    <!--banner-->
+    <section id="header" class="banner">
+        <div class="banner-content">
+            <div class="bannner-image">
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
+        </div>
+    </section>
+    <!--banner ends-->
+
+    <!--about-->
+    <section id="About" class="container-fluid about">
+        <div class="container bout-div">
+            <div class="row">
+                <div class="col-sm-6">
+                    <!-- <div class="colimage">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="">
+                    </div> -->
+                </div>
+                <div class="col-sm-6">
+                    <div class="about-content">
+                        <div class="title">
+                            <h3>Sai Srinivas </h3>
+                        </div>
+                        <div class="body">
+                            <p>Hi! My name is <em>Sai Srinivas</em>. I am a Web Developer, and I'm very passionate and dedicated to my work. As a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success.
+                                I enjoy every step of the design process, from discussion and collaboration.</p>
+                        </div>
+                    </div>
+                    <div class="icons">
+                        <p><span><i class="fa fa-gift" aria-hidden="true"></i></span>&nbsp;&nbsp; <b>Birthday:</b> 31<sup>st</sup>&nbsp;October</p>
+                        <p><span><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>&nbsp;&nbsp; <b>Graduation:</b> I have done my Bachelore of Technology with the First Class in the year 2018. </p>
+                        <p><span><i class="fa fa-envelope" aria-hidden="true"></i></span>&nbsp;&nbsp; <b>E-mail:</b> <a href="">kaligatlasaisrinivas@gmail.com</a> </p>
+                        <p><span><i class="fa fa-flag" aria-hidden="true"></i></i></span>&nbsp;&nbsp; <b>Nationality:</b> India</p>
+                    </div>
+                    <div class="downloadcv">
+                        <a href="./resume/srinivas resume.docx">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about ends-->
+
+    <!--resume-->
+    <section id="Resume" class="container-fluid participation">
+        <div class="container workparticpatipn">
+            <div class="header">
+                <h3 class="text-center">Work Participation</h3>
+            </div>
+            <div class="container timeline">
+                <div class="timeline-div">
+                    <!-- <ul>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>Web Developer</h3>
+                                <p>Clinch-infotech - Associate Software Engineer</p>
+                                <p>Working as a UI developer in clinch-infotech. Having experience in web based application development specializing in W3C web standards based markup, utilizing semantic markup for structure and CSS for presentation and worked
+                                    with latest web frameworks Bootstrap, Jquery and Angular.</p>
+                            </div>
+                            <div class="timeline-time">
+                                <h4>November 2019</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>Web Developer</h3>
+                                <p>Clinch-infotech - Associate Software Engineer</p>
+                                <p>Working as a UI developer in clinch-infotech. Having experience in web based application development specializing in W3C web standards based markup, utilizing semantic markup for structure and CSS for presentation and worked
+                                    with latest web frameworks Bootstrap, Jquery and Angular.</p>
+                            </div>
+                            <div class="timeline-time">
+                                <h4>November 2019</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>Web Developer</h3>
+                                <p>Clinch-infotech - Associate Software Engineer</p>
+                                <p>Working as a UI developer in clinch-infotech. Having experience in web based application development specializing in W3C web standards based markup, utilizing semantic markup for structure and CSS for presentation and worked
+                                    with latest web frameworks Bootstrap, Jquery and Angular.</p>
+                            </div>
+                            <div class="timeline-time">
+                                <h4>November 2019</h4>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-content">
+                                <h3>Web Developer</h3>
+                                <p>Clinch-infotech - Associate Software Engineer</p>
+                                <p>Working as a UI developer in clinch-infotech. Having experience in web based application development specializing in W3C web standards based markup, utilizing semantic markup for structure and CSS for presentation and worked
+                                    with latest web frameworks Bootstrap, Jquery and Angular.</p>
+                            </div>
+                            <div class="timeline-time">
+                                <h4>November 2019</h4>
+                            </div>
+                        </li>
+                        <div style="clear: both;"></div>
+                    </ul> -->
+                    <div class="row">
+                        <div class="col-lg-6 year2019">
+
+                            <h6 class="text-right" style="padding-right: 20px;">2019</h6>
+
+                        </div>
+                        <div class="col-lg-6">
+
+                            <div class="content2019">
+                                <div class="header-content">
+                                    <h5>Web Developer</h5>
+                                    <p>Clinch-infotech - Associate Software Engineer</p>
+                                </div>
+                                <div class="body">
+                                    <p>Working as a UI developer in clinch-infotech. Having experience in web based application development specializing in W3C web standards based markup, utilizing semantic markup for structure and CSS for presentation and
+                                        worked with latest web frameworks Bootstrap, Jquery and Angular.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                        </div>
+                        <div class="col-lg-6">
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+
+                        </div>
+                        <div class="col-lg-6">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Resume" class="work-expertise">
+        <div class="container work-div">
+            <div class="skill-content">
+                <h3 class="text-center" style="padding: 20px;">WORK EXPERTISE</h3>
+                <p class="text-center">Obviously I'M Web Developer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            </div>
+            <div class="skill-bar">
+                <div id="skills">
+                    <div class="skillbar clearfix " data-percent="95%">
+                        <div class="skillbar-title" style="background: #131313;"><span>Html</span></div>
+                        <div class="skillbar-bar" style="background: #131313;"></div>
+                        <div class="skill-bar-percent">95%</div>
+                    </div>
+
+                    <div class="skillbar clearfix " data-percent="85%">
+                        <div class="skillbar-title" style="background: #131313;"><span>Css</span></div>
+                        <div class="skillbar-bar" style="background: #131313;"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div>
+
+                    <div class="skillbar clearfix" data-percent="90%">
+                        <div class="skillbar-title" style="background: #131313;"><span>Bootstrap</span></div>
+                        <div class="skillbar-bar" style="background: #131313;"></div>
+                        <div class="skill-bar-percent">90%</div>
+                    </div>
+
+                    <div class="skillbar clearfix " data-percent="70%">
+                        <div class="skillbar-title" style="background: #131313;"><span>JavaScript</span></div>
+                        <div class="skillbar-bar" style="background: #131313;"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--resume ends-->
+
+    <!--color pannel-->
+
+    <section>
+        <div id="sidebar">
+            <div class="toggle-btn" onclick="toggleSideBar()">
+                <i class="fa fa-gear fa-spin" style="font-size:24px"></i>
+            </div>
+            <div class="slide-header">
+                <h5>pick your color</h5>
+            </div>
+
+            <div class="color">
+                <div class="btn">
+                    <button class="btn1"></button>
+                    <button class="btn2"></button>
+                    <button class="btn3"></button>
+                    <button class="btn4"></button>
+                    <button class="btn5"></button>
+                    <button class="btn6"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--color pannel ends-->
+
+    <!--contact us-->
+    <section id="contact-info" class="container-fluid contact">
+        <div class="container contactus-div">
+            <div class="contactus-header">
+                <h3 class="text-center">CONTACT ME</h3>
+                <p class="text-center">Obviously I'M Web Developer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            </div>
+            <div class="contactus-info">
+                <div class="contactus-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contactform">
+                                <div class="contact-form-div">
+                                    <form action="mailto:kaligatlasaisrinivas@gmail.com" method="post" enctype="text/plain">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="fullName" placeholder="Enter Your Full Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <select class="form-control" name="Country" id="" required>
+                                               <option value="select your country" hidden>select your country</option>
+                                                <option value="India" style="color: red;">India</option>
+                                                <option value="America" style="color: red;">America</option>
+                                                <option value="Canada" style="color: red;">Canada</option>
+                                                <option value="UK" style="color: red;">UK</option>
+                                            </select >
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="tel" class="form-control" name="mobileNumber" placeholder="Enter Your Mobile Number" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" name="Subject" class="form-control" placeholder="Enter Subject" required>
+                                        </div>
+                                        <div class="form-group">
+
+                                            <textarea class="form-control" name="Message" rows="5" id="comment" placeholder="Message" required></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-outline-primary">Send Mail</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="google-maps">
+                                <!-- <div class="map-icon"> -->
+                                <!-- <p><i class="fa fa-map-marker" aria-hidden="true"></i></p>
+                                    <p class="about-location"></p> -->
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1902.6930093388937!2d78.388978!3d17.489077!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa228bb29e95ba43a!2sSujana%20Enclave!5e0!3m2!1sen!2sin!4v1578894765044!5m2!1sen!2sin" width="600" height="450"
+                                    frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                                <!-- </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!--contact us ends-->
+
+    <!--footer-->
+    <section class="container-fluid footer">
+        <div class="container footer-div">
+            <div class="footer-heading">
+                <h4>SAI SRINIVAS</h4>
+            </div>
+            <div class="footer-matter">
+                <p>Obviously I'M Web Developer. Experienced with all stages of the development cycle for dynamic web projects.</p>
+            </div>
+            <div class="footer-icons">
+                <a href=""><span><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
+                <a href=""><span><i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+                <a href=""><span><i class="fa fa-instagram" aria-hidden="true"></i></span></a>
+                <a href=""><span><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
+                <a href=""><span><i class="fa fa-google-plus" aria-hidden="true"></i></span></a>
+            </div>
+            <hr>
+            <div class="footer-copyrights">
+                <p>&#169;<span>2020</span>.Template has been Designed and Developed by <span>Sai srinivas</span> .</p>
+            </div>
+        </div>
+    </section>
+    <!---footer ends-->
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="./app.js"></script>
+   
+        
+</body>
+
+</html>
